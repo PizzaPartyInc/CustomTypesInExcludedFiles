@@ -17,7 +17,8 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "outDir": "./dist",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "noEmit": true
   },
-  "exclude": ["node_modules", "dist", "scripts", "**/*spec.ts"]
+  "exclude": ["node_modules", "dist"]
 }

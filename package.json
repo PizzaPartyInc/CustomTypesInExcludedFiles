@@ -10,12 +10,12 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && tsc",
+    "build": "npm run clean && tsc --project tsconfig.build.json",
     "start": "npm run build && node dist/index",
     "case-one": "jest",
-    "case-two": "ts-node scripts/case-two.ts",
+    "case-two": "ts-node --files scripts/case-two.ts",
     "case-two-works": "ts-node --transpile-only scripts/case-two.ts",
-    "case-three": "ts-node scripts/case-three.ts",
+    "case-three": "ts-node --files scripts/case-three.ts",
     "case-three-works": "ts-node --transpile-only scripts/case-three.ts"
   },
   "keywords": [],
